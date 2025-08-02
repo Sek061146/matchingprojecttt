@@ -321,7 +321,5 @@ def extract_and_analyze(contents, edu_level):
     except Exception as e:
         return f"\u274c \u0e40\u0e01\u0e34\u0e14\u0e02\u0e49\u0e2d\u0e1c\u0e25\u0e1e\u0e25\u0e32\u0e14: {str(e)}"
 
-# ✅ Run
-app.run_server(mode='inline', debug=True)
-
+app.run_server(debug=True, host="0.0.0.0", port=8000)
 
